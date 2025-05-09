@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #fdf0f4; /* Light pink background */
+  color: #333; /* Dark gray text */
+  font-family: 'Arial', sans-serif; /* Standard sans-serif font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #c7376a; /* Pink for headings */
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md font-semibold;
+}
+
+.btn-primary {
+  @apply bg-pink-500 text-white hover:bg-pink-600;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md p-4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2rem; /* 32px */
+  }
+  h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+  h3 {
+    font-size: 1.5rem; /* 24px */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 1.5rem; /* 24px */
+  }
+  h2 {
+    font-size: 1.25rem; /* 20px */
+  }
+  h3 {
+    font-size: 1.125rem; /* 18px */
+  }
+}
